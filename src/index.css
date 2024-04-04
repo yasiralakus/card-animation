@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a { text-decoration: none; }
+
+li, summary { list-style: none;}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+/* hazır kodlarım */
+
+.full-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    gap: 16px;
+}
+
+.card {
+    background-color: #f0f0f0;
+    border: 1px solid #e3e3e3;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 200px;
+    gap: 32px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    > i {
+        position: absolute;
+        font-size: 100px;
+        top: 50px;
+        transition: all .5s ease;
+        color: #2e2e2e;
+    }
+    > h1 {
+        position: absolute;
+        font-size: 24px;
+        bottom: 50px;
+        color: #2e2e2e;
+        font-weight: 500;
+        transition: all .5s ease;
+    }
+    > p {
+        font-size: 14px;
+        color: #333;
+        text-align: center;
+        position: absolute;
+        bottom: 10px;
+        padding: 0 10px;
+        opacity: 0;
+        transition: all .3s ease;
+    }
+}
+
+.card:hover {
+    background-color: #ffffff;
+    > i {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        top: 0;
+        transform: translateY(-35px);
+        background-color: #fff;
+        border: 1px solid #e3e3e3;
+    }
+    > h1 {
+        transform: translateY(-75px);
+        bottom: auto;
+        color: #29b2fe;
+    }
+    > p {
+        opacity: 1;
+    }
+}
+
+.card2 {
+    height: 250px;
+    width: 200px;
+    background-color: #f0f0f0;
+    border: 1px solid #e3e3e3;
+}
+
+.card2:hover {
+    transform: rotateY(180deg)
+}
