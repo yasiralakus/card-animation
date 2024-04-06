@@ -4,6 +4,13 @@ export default function App() {
 
     const [animation2, setAnimation2] = useState(false);
 
+    const [anim3TextValue, setAnim3TextValue] = useState('')
+    console.log(anim3TextValue)
+
+    function handleAnim3(event) {
+        setAnim3TextValue(event.target.value)
+    }
+
     return (
         <div className="full-page">
 
@@ -87,6 +94,15 @@ export default function App() {
                             <a style={animation2 === true ? {opacity: '1'} : {}} href="">Notifications</a>
                         </li>
                     </ul>
+
+                </div>
+
+                <div className="animation-03">
+
+                    <div>
+                        <input type="text" onChange={handleAnim3} value={anim3TextValue}/>
+                        <p style={anim3TextValue === '' ? {} : {transform: 'translateY(-20px)', zIndex: '3', color: '#000'}} >Kullanıcı Adı giriniz</p>
+                    </div>
 
                 </div>
 
