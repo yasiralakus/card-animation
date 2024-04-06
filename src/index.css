@@ -371,6 +371,7 @@ p, h1, h2, h3, h4, h5, h6 {
         }
     }
     > div:hover {
+        background-color: #f0f0f0;
         > img {
             width: 100%;
             height: 180px;
@@ -393,7 +394,7 @@ p, h1, h2, h3, h4, h5, h6 {
 /* ANIMASYON 6 START */
 
 .animation-06 {
-    width: 1800px;
+    width: 1200px;
     display: flex;
     gap: 16px;
     > div {
@@ -442,3 +443,173 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* ANIMASYON 6 END */
+
+/* ANIMASYON 7 START */
+
+.animation-07 {
+    display: flex;
+    gap: 16px;
+    > div {
+        overflow: hidden;
+        > img {
+            width: 250px;
+            height: 375px;
+            transition: all .5s;
+        }
+    }
+    > div:nth-child(1):hover {
+        > img {
+            transform: scale(1.25) rotate(10deg);
+        }
+    }
+    > div:nth-child(2):hover {
+        > img {
+            transform: scale(1.25);
+        }
+    }
+    > div:nth-child(3):hover {
+        > img {
+            transform: scale(1.25) rotate(10deg);
+        }
+    }
+}
+
+/* ANIMASYON 7 END */
+
+/* ANIMASYON 8 START */
+
+.animation-08 {
+    display: flex;
+    gap: 32px;
+    > div {
+        position: relative;
+        width: 400px;
+        border: 1px solid #ccc;
+        height: 420px;
+        overflow: hidden;
+        > img {
+            width: 400px;
+            height: 300px;
+            transition: all .5s;
+        }
+        > h6 {
+            position: absolute;
+            top: 320px;
+            font-size: 15px;
+            color: #f44336;
+            padding: 0 16px;
+            transition: all .5s;
+
+        }
+        > h1 {
+            position: absolute;
+            top: 350px;
+            font-size: 18px;
+            color: #000;
+            font-weight: 600;
+            padding: 0 16px;
+            transition: all .5s;
+        }
+        > p {
+            position: absolute;
+            top: 410px;
+            color: #666;
+            letter-spacing: 1px;
+            padding: 0 16px;
+            transition: all .5s;
+            opacity: 0;
+        }
+        > h5 {
+            position: absolute;
+            top: 350px;
+            font-size: 15px;
+            color: #666;
+            font-weight: 500;
+            padding: 0 16px;
+            transition: all .5s;
+            opacity: 0;
+        }
+        > button {
+            width: 100%;
+            border: none;
+            display: flex;
+            opacity: 0;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            position: absolute;
+            top: 520px;
+            padding: 8px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all .5s;
+            background-color: #f0f0f0;
+        }
+        > button:hover {
+            background-color: #ccc;
+        }
+        > div {
+            position: absolute;
+            display: flex;
+            opacity: 0;
+            gap: 32px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding-left: 16px;
+            top: 515px;
+            transition: all .3s;
+
+            > p:nth-child(1) {
+                > i {
+                    color: #f00;
+                }
+            }
+            > p:nth-child(2) {
+                > i {
+                    color: rgb(55, 0, 255);
+                }
+            }
+        }
+    }
+    > div:hover {
+        > img {
+            height: 0;
+        }
+        > h6 {
+            top: 15px;
+        }
+        > h5 {
+            opacity: 1;
+            top: 50px;
+        }
+        > h1 {
+            top: 85px;
+            line-height: 1.2;
+        }
+        > p {
+            opacity: 1;
+            top: 140px;
+        }
+        > div {
+            opacity: 1;
+            top: 340px;
+        }
+        > button {
+            opacity: 1;
+            top: auto;
+            bottom: 0;
+        }
+    }
+}
+
+/* ANIMASYON 8 END */
+
+/* ANIMASYON 9 START */
+/* ANIMASYON 9 END */
+
+/* ANIMASYON 10 START */
+/* ANIMASYON 10 END */
+
+/* ANIMASYON 11 START */
+/* ANIMASYON 11 END */
