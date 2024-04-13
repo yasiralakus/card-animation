@@ -3,6 +3,11 @@ import { useState } from "react"
 export default function App() {
 
     const [animation2, setAnimation2] = useState(false);
+    const [animation9, setAnimation9] = useState(true);
+    const [animation10, setAnimation10] = useState(true);
+    const [animation11, setAnimation11] = useState(true);
+
+
 
     const [anim3TextValue, setAnim3TextValue] = useState('')
     console.log(anim3TextValue)
@@ -242,6 +247,88 @@ export default function App() {
 
                 </div>
 
+                <div className="with">
+
+                    <div className="animation-09">
+
+                        <div onClick={() => (animation9 === true ? setAnimation9(false) : setAnimation9(true))}>
+                            <span style={animation9 === true ? {transform: 'rotate(45deg) translateX(10px) translateY(9px)'} : {}}></span>
+                            <span style={animation9 === true ? {opacity: '0'} : {}}></span>
+                            <span style={animation9 === true ? {transform: 'rotate(135deg) translateX(-6px) translateY(5px)'} : {}}></span>
+                        </div>
+
+                        <ul style={animation9 === true ? {width: '200px', height: '328px'} : {}}>
+                            <li><a href="">link 1</a></li>
+                            <li>
+                                <a href="">{'>>>'} link 2 </a>
+                                <ul>
+                                    <li><a href="">link 1</a></li>
+                                    <li><a href="">link 2</a></li>
+                                    <li><a href="">link 3</a></li>
+                                    <li><a href="">link 4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">link 3</a></li>
+                            <li><a href="">link 4</a></li>
+                            <li>
+                                <a href="">{'>>>'} link 5 </a>
+                                <ul>
+                                    <li><a href="">link 1</a></li>
+                                    <li><a href="">link 2</a></li>
+                                    <li><a href="">link 3</a></li>
+                                    <li><a href="">link 4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">link 6</a></li>
+                            <li><a href="">link 7</a></li>
+                            <li><a href="">link 8</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div className="animation-10">
+
+                        <div onClick={() => (animation10 === true ? setAnimation10(false) : setAnimation10(true))}>
+                            <span style={animation10 === true ? {transform: 'rotate(45deg) translateX(10px) translateY(9px)'} : {}}></span>
+                            <span style={animation10 === true ? {opacity: '0'} : {}}></span>
+                            <span style={animation10 === true ? {transform: 'rotate(135deg) translateX(-6px) translateY(5px)'} : {}}></span>
+                        </div>
+
+                        <ul style={animation10 === true ? {width: '200px', height: '328px'} : {}}>
+                            <li><a href="">link 1</a></li>
+                            <li><a href="">link 2</a></li>
+                            <li><a href="">link 3</a></li>
+                            <li><a href="">link 4</a></li>
+                            <li><a href="">link 5</a></li>
+                            <li><a href="">link 6</a></li>
+                            <li><a href="">link 7</a></li>
+                            <li><a href="">link 8</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div className="animation-11">
+
+                        <div onClick={() => (animation11 === true ? setAnimation11(false) : setAnimation11(true))}>
+                            <span style={animation11 === true ? {transform: 'rotate(45deg) translateX(10px) translateY(9px)'} : {}}></span>
+                            <span style={animation11 === true ? {opacity: '0'} : {}}></span>
+                            <span style={animation11 === true ? {transform: 'rotate(135deg) translateX(-6px) translateY(5px)'} : {}}></span>
+                        </div>
+
+                        <ul style={animation11 === true ? {width: '200px', height: '328px'} : {}}>
+                            <li><a href="">link 1</a></li>
+                            <li><a href="">link 2</a></li>
+                            <li><a href="">link 3</a></li>
+                            <li><a href="">link 4</a></li>
+                            <li><a href="">link 5</a></li>
+                            <li><a href="">link 6</a></li>
+                            <li><a href="">link 7</a></li>
+                            <li><a href="">link 8</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
             </div>
 
         </div>

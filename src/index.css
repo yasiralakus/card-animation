@@ -605,11 +605,190 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* ANIMASYON 8 END */
 
+.with {
+    display: flex;
+    gap: 300px;
+    width: 100%;
+}
+
 /* ANIMASYON 9 START */
+
+.animation-09 {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    gap: 50px;
+    > div {
+        height: 30px;
+        position: absolute;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        > span {
+            display: block;
+            width: 40px;
+            height: 6px;
+            background-color: #000;
+            transition: all .5s;
+        }
+    }
+    > ul {
+        background-color: #000;
+        position: absolute;
+        width: 200px;
+        height: 0;
+        /* overflow: hidden; */
+        transition: all .5s;
+        top: 60px;
+        > li {
+            padding: 8px;
+            border-bottom: 1px solid #fff;
+            position: relative;
+            > a {
+                color: #fff;
+                display: block;
+            }
+            > ul {
+                position: absolute;
+                right: -201px;
+                z-index: -1;
+                background-color: #000;
+                top: 0;
+                width: 200px;
+                height: 0;
+                transition: all .5s;
+
+                > li {
+                    padding: 8px;
+                    border-bottom: 1px solid #fff;
+                    > a {
+                        color: #fff;
+                        display: block;
+                    }
+                }
+                >li:hover {
+                    background-color: #2e2e2e;
+                }
+            }
+        }
+        > li:hover {
+            background-color: #3a3a3a;
+            > ul {
+                width: 200px;
+                height: 164px;
+                z-index: 1;
+            }
+        }
+        
+    }
+}
+
 /* ANIMASYON 9 END */
 
 /* ANIMASYON 10 START */
+
+.animation-10 {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    gap: 50px;
+    > div {
+        height: 30px;
+        position: absolute;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        > span {
+            display: block;
+            width: 40px;
+            height: 6px;
+            background-color: #000;
+            transition: all .5s;
+        }
+    }
+    > ul {
+        background-color: #000;
+        position: absolute;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        transition: all .5s;
+        top: 60px;
+        > li {
+            padding: 8px;
+            border-bottom: 1px solid #fff;
+            > a {
+                color: #fff;
+                display: block;
+            }
+        }
+        > li:hover {
+            background-color: #3a3a3a;
+        }
+        
+    }
+}
+
 /* ANIMASYON 10 END */
 
 /* ANIMASYON 11 START */
+
+.animation-11 {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    gap: 50px;
+    > div {
+        height: 30px;
+        position: absolute;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        > span {
+            display: block;
+            width: 40px;
+            height: 6px;
+            background-color: #000;
+            transition: all .5s;
+        }
+    }
+    > ul {
+        background-color: #000;
+        position: absolute;
+        width: 0;
+        height: 328px;
+        overflow: hidden;
+        transition: all .5s;
+        top: 60px;
+        > li {
+            padding: 8px;
+            border-bottom: 1px solid #fff;
+            > a {
+                color: #fff;
+                display: block;
+            }
+
+        }
+        > li:hover {
+            background-color: #3a3a3a;
+        }
+        
+    }
+}
+
 /* ANIMASYON 11 END */
